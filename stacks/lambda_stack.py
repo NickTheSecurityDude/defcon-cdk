@@ -27,6 +27,7 @@ class LambdaStack(core.Stack):
       handler="DefCon.lambda_handler",
       runtime=lambda_.Runtime.PYTHON_3_8,
       role=defcon_lambda_role,
+      timeout=core.Duration.seconds(60)                                            
     )
 
 
