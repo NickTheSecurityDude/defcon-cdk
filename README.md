@@ -13,7 +13,7 @@ source .venv/bin/activate
 python3 -m pip install -r requirements.txt  
 cdk bootstrap aws://<account-id>/<region>  
 cdk synth   
-cdk deploy all
+cdk deploy --all
 ```
 
 Enable or disable defcon lockdown through the lambda interface in the console with a test event.
